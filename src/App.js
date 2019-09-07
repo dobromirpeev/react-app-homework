@@ -30,20 +30,20 @@ class App extends React.Component{
     render() {
         return (
             <div className="App">
-            <header className="App-header">
-            <img
-        src={this.state.imageList[this.state.imageState]}
-        className="App-image"
-        alt="logo"
-            />
-            <div>
-            <Button name="Apple" imageState={this.inputDigit} imageIndex={0}/>
-        <Button name="Orange" imageState={this.inputDigit} imageIndex={1}/>
-        <Button name="Peach" imageState={this.inputDigit} imageIndex={2}/>
-        </div>
-        </header>
-        </div>
-    );
+                <header className="App-header">
+                    <img
+                        src={this.state.imageList[this.state.imageState]}
+                        className="App-image"
+                        alt="logo"
+                    />
+                    <div>
+                        <Button name="Apple" imageState={this.inputDigit} imageIndex={0}/>
+                        <Button name="Orange" imageState={this.inputDigit} imageIndex={1}/>
+                        <Button name="Peach" imageState={this.inputDigit} imageIndex={2}/>
+                    </div>
+                </header>
+            </div>
+        );
     }
 }
 
