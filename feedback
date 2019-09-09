@@ -1,0 +1,8 @@
+You have completed the task excellent. I like it very much, with the data attributes that you have placed. 
+You could also do it with ID, because usually you have IDs coming from the database and you can use them for free.
+This is just a suggestion it is not a demand, again great work!
+
+One small remark though.
+Please don't place any constants into the constructor, this is antipattern.
+If you need to have multiple values, use them directly into the state.
+If you still need some variables to allocate memory, place them inside render() method, this is the desired pattern. 
