@@ -9,7 +9,7 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 describe ("Application", () => {
-   it('Renders without crashing', () => {
+    it('Renders without crashing', () => {
      const div = document.createElement('div');
 
      ReactDOM.render(<App />, div);
@@ -42,12 +42,12 @@ describe ("Application", () => {
 });
 
 describe("Button", () => {
-  it('Should render button component', () => {
-    const button = shallow(<Button name="Test" imageState={{}} imageIndex={1} />);
+    it('Should render button component', () => {
+        const button = shallow(<Button name="Test" imageState={{}} imageIndex={1} />);
 
-    expect(button.text()).toMatch("Test");
-    expect(button.find("button").length).toBe(1);
-  });
+        expect(button.text()).toMatch("Test");
+        expect(button.find("button").length).toBe(1);
+    });
 
     it("Button click calls the method inputDigit method", () => {
         const imageState = jest.fn();
